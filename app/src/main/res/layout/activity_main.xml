@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/weightTextView"
+        android:layout_width="129dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:text="Weight"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FAF6F6"
+        android:textColorLink="#3F51B5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="in LBS"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#D6991E"
+        android:textColorLink="#D6991E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightTextView"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <TextView
+        android:id="@+id/heightTextView"
+        android:layout_width="145dp"
+        android:layout_height="54dp"
+        android:text="Height"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FAF6F6"
+        android:textColorLink="#3F51B5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="in inches"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="#84B534"
+        android:textColorHighlight="#FF9800"
+        android:textColorLink="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightTextView"
+        app:layout_constraintVertical_bias="0.004"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="255dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="32dp"
+        android:text="Calculate"
+        android:textColorHighlight="#F6F0F0"
+        android:textColorLink="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_height"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,UnknownId" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="344dp"
+        android:layout_height="203dp"
+        android:textAlignment="center"
+        android:text="BMI Value:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button"
+        app:layout_constraintVertical_bias="0.25"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="256dp"
+        android:layout_height="83dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
